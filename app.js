@@ -3,9 +3,7 @@ const bodyparser = require('body-parser')
 
 let app= express();
 
-app.get('/', (req,res)=>
-    res.send('Homepage!')
-)
+app.get('/', (req,res) => res.send('Homepage!'))
 
 const PORT=5000;
 
