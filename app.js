@@ -12,6 +12,8 @@ const LocalStrategy = require('passport-local').Strategy;
 const User = require('./models/User');
 let app = express();
 
+let payments = '/../Users/Rahul/Desktop/Raspberry/static/index.ejs'
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -25,7 +27,7 @@ mongoose
 
 app.use(ejsExpressLayouts);
 app.use('/', express.static(path.join(__dirname, 'public')));
-app.use('/payments', express.static('static'))
+app.use(express.static(path.join(__dirname, 'staic')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -98,6 +100,14 @@ app.get('/login', (req, res) => {
 app.get('/register', (req, res) => {
     res.render('register');
 });
+
+app.get('/payments', (req, res) => { 
+    res.render('payments')
+})
+
+app.post('/payments', (req, res) => { 
+    console.log(req.body);
+})
 
 app.post('/register', (req, res) => {
     const { name, email, password, password2 } = req.body;
