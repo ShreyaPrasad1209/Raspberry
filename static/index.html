@@ -1,501 +1,287 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="zxx">
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+<head>
+    <title>Payment Tab</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Payment Tab Widget a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>T.R.I.C</title>
-    </head>
-    
-    <body>
-        <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <!-- easy-responsive-tabs css -->
+    <link rel="stylesheet" href="css/easy-responsive-tabs.css" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
+</head>
 
-            <div class="navigation__background">&nbsp;</div>
-
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#header" class="navigation__link"><span>01</span>Home</a></li>
-                    <li class="navigation__item"><a href="#u-center-text u-margin-bottom-big" class="navigation__link"><span>02</span>About</a></li>
-                    <!-- <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Registration</a></li> -->
-                    <li class="navigation__item"><a href="#loginsection" class="navigation__link"><span>03</span>Payment</a></li>
-                    <li class="navigation__item"><a href="#footer" class="navigation__link"><span>04</span>Contact</a></li>
-                    </ul>
-            </nav>
-        </div>
-
-        <header class="header">
-            <div class="header__logo-box">
-                <img src="img/logo-white.png" alt="Logo" class="header__logo">
-            </div>
-
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">T.R.I.C</span>
-                    <span class="heading-primary--sub">India's first thrash talker</span>
-                </h1>
-
-                <a href="#section-tours" class="btn btn--white btn--animated">Discover our features</a>
-            </div>
-        </header>
-
-        <main>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                    Thrash Talker
-                    </h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small"> </h3>
-                        <p class="paragraph">
-                            T.R.I.C is a garbage collector cum service provider 
-                            for maintaning clean environment and sustanibility. 
-                        </p>
-
-                        <h3 class="heading-tertiary u-margin-bottom-small">Live your life like never before</h3>
-                        <p class="paragraph">
-                            
-                        </p>
-
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
-                    </div>
-                    <div class="col-1-of-2">
-                        <div class="composition">
-                            <img src="https://images.unsplash.com/photo-1495909617868-3fda03e184ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Photo 3" class="composition__photo composition__photo--p3">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-features">
-                
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-world"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Detector</h3>
-                            <p class="feature-box__text">
-                               Alerts you when your garbage bins overflows
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-compass"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Collector</h3>
-                            <p class="feature-box__text">
-                                Notifies you when to collect garbage
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon fas fa-hand-holding-seedling"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Physical Activity</h3>
-                             <p class="feature-box__text">
-                                10,000
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-heart"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Manage your weight</h3>
-                            <p class="feature-box__text">
-                                70kg
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-tours" id="section-tours">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Technologies Used
-                    </h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-1-of-3">
-                       <div class="card">
-                           <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--1">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--1">Web Development</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li> 
-                                    </ul>
-                                </div>
-                           </div>
-                           <div class="card__side card__side--back card__side--back-1">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                            <p class="card__price-only">SASS</p>
-                                        <p class="card__price-only">Node.js</p>
-                                        <p class="card__price-only">Firebase</p>
-                                        <p class="card__price-value"></p>
+<body>
+    <h1 class="title-agile text-center">Payment Tab Widget</h1>
+    <div class="w3ls-main">
+        <!--/tabs-->
+        <div class="responsive_tabs w3ls_tab">
+            <div id="horizontalTab">
+                <ul class="resp-tabs-list">
+                    <li>Credit/Debit</li>
+                    <li>Net Banking</li>
+                    <li>Paypal Account</li>
+                </ul>
+                <div class="resp-tabs-container">
+                    <!--tab_one-->
+                    <div class="tab1">
+                        <div class="agile_pay">
+                            <form action="#" method="post" class="creditly-card-form shopf-sear-headinfo_form">
+                                <section class="creditly-wrapper payf_wrapper">
+                                    <div class="credit-card-wrapper">
+                                        <div class="first-row form-group">
+                                            <div class="controls">
+                                                <label class="control-label">Name on Card</label>
+                                                <input class="billing-address-name form-control" type="text" name="name" placeholder="John Smith">
+                                            </div>
+                                            <div class="paymntf_card_number_grids">
+                                                <div class="fpay_card_number_grid_left">
+                                                    <div class="controls">
+                                                        <label class="control-label">Card Number</label>
+                                                        <input class="number credit-card-number form-control" type="text" name="number" inputmode="numeric" autocomplete="cc-number"
+                                                            autocompletetype="cc-number" x-autocompletetype="cc-number" placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
+                                                    </div>
+                                                </div>
+                                                <div class="fpay_card_number_grid_right">
+                                                    <div class="controls">
+                                                        <label class="control-label">CVV</label>
+                                                        <input class="security-code form-control" Â· inputmode="numeric" type="text" name="security-code" placeholder="&#149;&#149;&#149;">
+                                                    </div>
+                                                </div>
+                                                <div class="clear"> </div>
+                                            </div>
+                                            <div class="controls">
+                                                <label class="control-label">Expiration Date</label>
+                                                <input class="expiration-month-and-year form-control" type="text" name="expiration-month-and-year" placeholder="MM / YY">
+                                            </div>
+                                        </div>
+                                        <button class="submit">
+                                            <span>Make payment </span>
+                                        </button>
                                     </div>
-                                    <!-- <a href="#popup" class="btn btn--white">Book now!</a> -->
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-
-
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">Machine Learning</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>PyTorch</li>
-                                        <li>OpenCV</li>
-                                        <li>TensorFlow Lite</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">SKLearn</p>
-                                        <p class="card__price-only">Plotly</p>
-                                        <p class="card__price-only">Math.Lib</p>
-                                        <!-- <p class="card__price-value">$497</p> -->
-                                    </div>
-                                    <!-- <a href="#popup" class="btn btn--white">Book now!</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--3">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3">Internet of Things</span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>Arduino</li>
-                                        <li>Bolt IoT</li>
-                                        <li>Ultrasonic Sensors</li> 
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="card__side card__side--back card__side--back-3">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Based on Dart</p>
-                                        <p class="card__price-only"> Open Source</p>
-                                        <!-- <p class="card__price-value">$897</p> -->
-                                    </div>
-                                    <!-- <a href="#popup" class="btn btn--white">Book now!</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn btn--green">Discover all tours</a>
-                </div> -->
-            </section>
-
-            <section class="section-stories">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4">
-                        <source src="img/video.webm" type="video/webm">
-                        Your browser is not supported!
-                    </video>
-                </div>
-
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        We make people genuinely healthy! 
-                    </h2>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
-                            <figcaption class="story__caption">Mary Smith</figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small">VibeFit improved my life in ways i couldn't have imagined </h3>
-                            <p>
-                                Using VibeFit was such a personalised and positive experience. It brought me closer to my loved ones and 
-                                improved my life vastly. Thank you VibeFit!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
-                            <figcaption class="story__caption">Jack Wilson</figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
-                            <p>
-                              VibeFit played a crucial role in improving my life expectancy and quality.  
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text">Read all stories &rarr;</a>
-                </div>
-            </section>
-
-            <!-- <section class="section-book">
-                <div class="row">
-                    <div class="book">
-                        <div class="book__form">
-                            <form action="/auth/register" class="form">
-                                <div class="u-margin-bottom-medium">
-                                    <h2 class="heading-secondary">
-                                        Register Now!
-                                    </h2>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                                    <label for="name" class="form__label">Full name</label>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                                    <label for="email" class="form__label">Email address</label>
-                                </div>   -->
-
-                                
-<!-- 
-                                <div class="form__group u-margin-bottom-medium">
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="small" name="size">
-                                        <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Small tour group
-                                        </label>
-                                    </div> -->
-
-                                    <!-- <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="large" name="size">
-                                        <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Large tour group
-                                        </label>
-                                    </div>
-                                </div> -->
-
-                                <!-- <div class="form__group">
-                                    <button class="btn btn--green">Next step &rarr;</button>
-                                </div>
+                                </section>
                             </form>
+
                         </div>
                     </div>
-                </div>
-            </section>
-        </main> -->
-
-        <div class="loginsection">
-        <section class="section-book">
-            <div class="row">
-                <div class="book">
-                    <div class="book__form">
-                        <form action="/auth/login" class="form">
-                            <div class="u-margin-bottom-medium">
-                                <h2 class="heading-secondary">
-                                  Login
-                                </h2>
+                    <!-- //tab one -->
+                    <!-- tab two -->
+                    <div class="tab2">
+                        <div class="agile_pay">
+                            <div class="vertical_post">
+                                <form action="#" method="post">
+                                    <h2>Select From Popular Banks</h2>
+                                    <div class="swit-radio">
+                                        <div class="check_box_one">
+                                            <div class="radio_one">
+                                                <label>
+                                                    <input type="radio" name="radio" checked="">
+                                                    <i></i>Syndicate Bank</label>
+                                            </div>
+                                        </div>
+                                        <div class="check_box_one">
+                                            <div class="radio_one">
+                                                <label>
+                                                    <input type="radio" name="radio">
+                                                    <i></i>Bank of Baroda</label>
+                                            </div>
+                                        </div>
+                                        <div class="check_box_one">
+                                            <div class="radio_one">
+                                                <label>
+                                                    <input type="radio" name="radio">
+                                                    <i></i>Canara Bank</label>
+                                            </div>
+                                        </div>
+                                        <div class="check_box_one">
+                                            <div class="radio_one">
+                                                <label>
+                                                    <input type="radio" name="radio">
+                                                    <i></i>ICICI Bank</label>
+                                            </div>
+                                        </div>
+                                        <div class="check_box_one">
+                                            <div class="radio_one">
+                                                <label>
+                                                    <input type="radio" name="radio">
+                                                    <i></i>State Bank Of India</label>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <h3> select other bank</h3>
+                                    <div class="section_room_pay">
+                                        <select class="year">
+                                            <option value="">=== Other Banks ===</option>
+                                            <option value="ALB-NA">Allahabad Bank NetBanking</option>
+                                            <option value="ADB-NA">Andhra Bank</option>
+                                            <option value="BBK-NA">Bank of Bahrain and Kuwait NetBanking</option>
+                                            <option value="BBC-NA">Bank of Baroda Corporate NetBanking</option>
+                                            <option value="BBR-NA">Bank of Baroda Retail NetBanking</option>
+                                            <option value="BOI-NA">Bank of India NetBanking</option>
+                                            <option value="BOM-NA">Bank of Maharashtra NetBanking</option>
+                                            <option value="CSB-NA">Catholic Syrian Bank NetBanking</option>
+                                            <option value="CBI-NA">Central Bank of India</option>
+                                            <option value="CUB-NA">City Union Bank NetBanking</option>
+                                            <option value="CRP-NA">Corporation Bank</option>
+                                            <option value="DBK-NA">Deutsche Bank NetBanking</option>
+                                            <option value="DCB-NA">Development Credit Bank</option>
+                                            <option value="DC2-NA">Development Credit Bank - Corporate</option>
+                                            <option value="DLB-NA">Dhanlaxmi Bank NetBanking</option>
+                                            <option value="FBK-NA">Federal Bank NetBanking</option>
+                                            <option value="IDS-NA">Indusind Bank NetBanking</option>
+                                            <option value="IOB-NA">Indian Overseas Bank</option>
+                                            <option value="ING-NA">ING Vysya Bank (now Kotak)</option>
+                                            <option value="JKB-NA">Jammu and Kashmir NetBanking</option>
+                                            <option value="JSB-NA">Janata Sahakari Bank Limited</option>
+                                            <option value="KBL-NA">Karnataka Bank NetBanking</option>
+                                            <option value="KVB-NA">Karur Vysya Bank NetBanking</option>
+                                            <option value="LVR-NA">Lakshmi Vilas Bank NetBanking</option>
+                                            <option value="OBC-NA">Oriental Bank of Commerce NetBanking</option>
+                                            <option value="CPN-NA">PNB Corporate NetBanking</option>
+                                            <option value="PNB-NA">PNB NetBanking</option>
+                                            <option value="RSD-DIRECT">Rajasthan State Co-operative Bank-Debit Card</option>
+                                            <option value="RBS-NA">RBS (The Royal Bank of Scotland)</option>
+                                            <option value="SWB-NA">Saraswat Bank NetBanking</option>
+                                            <option value="SBJ-NA">SB Bikaner and Jaipur NetBanking</option>
+                                            <option value="SBH-NA">SB Hyderabad NetBanking</option>
+                                            <option value="SBM-NA">SB Mysore NetBanking</option>
+                                            <option value="SBT-NA">SB Travancore NetBanking</option>
+                                            <option value="SVC-NA">Shamrao Vitthal Co-operative Bank</option>
+                                            <option value="SIB-NA">South Indian Bank NetBanking</option>
+                                            <option value="SBP-NA">State Bank of Patiala NetBanking</option>
+                                            <option value="SYD-NA">Syndicate Bank NetBanking</option>
+                                            <option value="TNC-NA">Tamil Nadu State Co-operative Bank NetBanking</option>
+                                            <option value="UCO-NA">UCO Bank NetBanking</option>
+                                            <option value="UBI-NA">Union Bank NetBanking</option>
+                                            <option value="UNI-NA">United Bank of India NetBanking</option>
+                                            <option value="VJB-NA">Vijaya Bank NetBanking</option>
+                                        </select>
+                                    </div>
+                                    <input type="submit" value="Pay now">
+                                </form>
                             </div>
-
-                            <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Username/Email-Id" id="name" required>
-                                <label for="name" class="form__label">Username/Email Id</label>
-                            </div>
-
-                            <div class="form__group">
-                                <input type="password" class="form__input" placeholder="Password" id="email" required>
-                                <label for="email" class="form__label">Password</label>
-                            </div>  
-
-                            
-<!-- 
-                            <div class="form__group u-margin-bottom-medium">
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="small" name="size">
-                                    <label for="small" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        Small tour group
-                                    </label>
-                                </div> -->
-
-                                <!-- <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="large" name="size">
-                                    <label for="large" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        Large tour group
-                                    </label>
-                                </div>
-                            </div> -->
-
-                            <div class="form__group">
-                                <button class="btn btn--green">Next step &rarr;</button>
-                            </div>
-                            <h2 class="heading-tertiary u-margin-bottom-small">
-                                Not on T.R.I.C? Sign Up today! 
-                               </h2>
-                          
-                            <div class="form__group">
-                                <button class="btn btn--green">Register&rarr;</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
+                    <!-- //tab two -->
+                    <!-- tab three -->
+                    <div class="tab3">
+                        <div class="agile_pay">
+                            <div class=" tab-grid">
+                                <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
+                                <a href="#" class="btn btn-primary">Checkout via Paypal</a>
+                            </div>
+                            <div class="paypal_agile">
+                                <form action="#" method="post" class="creditly-card-form shopf-sear-headinfo_form">
+                                    <section class="creditly-wrapper payf_wrapper">
+                                        <div class="credit-card-wrapper">
+                                            <div class="first-row form-group">
+                                                <div class="controls">
+                                                    <label class="control-label">Card Holder </label>
+                                                    <input class="billing-address-name form-control" type="text" name="name" placeholder="John Smith">
+                                                </div>
+                                                <div class="paymntf_card_number_grids">
+                                                    <div class="fpay_card_number_grid_left">
+                                                        <div class="controls">
+                                                            <label class="control-label">Card Number</label>
+                                                            <input class="number credit-card-number form-control" type="text" name="number" inputmode="numeric" autocomplete="cc-number"
+                                                                autocompletetype="cc-number" x-autocompletetype="cc-number" placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="fpay_card_number_grid_right">
+                                                        <div class="controls">
+                                                            <label class="control-label">CVV</label>
+                                                            <input class="security-code form-control" Â· inputmode="numeric" type="text" name="security-code" placeholder="&#149;&#149;&#149;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"> </div>
+                                                </div>
+                                                <div class="controls">
+                                                    <label class="control-label">Valid Thru</label>
+                                                    <input class="expiration-month-and-year form-control" type="text" name="expiration-month-and-year" placeholder="MM / YY">
+                                                </div>
+                                            </div>
+                                            <input class="btn btn-primary submit" type="submit" value="Proceed Payment">
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <!-- //tab three -->
                 </div>
             </div>
         </div>
-        </section>
-    </main>
+        <!--//tabs-->
+    </div>
+    <!-- //payment -->
+    <!-- Common js -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <!--// Common js -->
+    <!-- easy-responsive-tabs -->
+    <script src="js/easy-responsive-tabs.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion           
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+        });
+    </script>
+    <!-- //easy-responsive-tabs -->
+    <!-- credit-card -->
+    <script src="js/creditly.js"></script>
+    <link rel="stylesheet" href="css/creditly.css" type="text/css" media="all" />
+    <script>
+        $(function () {
+            var creditly = Creditly.initialize(
+                '.creditly-wrapper .expiration-month-and-year',
+                '.creditly-wrapper .credit-card-number',
+                '.creditly-wrapper .security-code',
+                '.creditly-wrapper .card-type');
 
-        <footer class="footer">
-            <div class="footer__logo-box">
-                <img src="img/vibe.jpeg" alt="Full logo" class="footer__logo">
-            </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Gmail</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Instagram</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Twitter</a></li>
-                            <!-- <li class="footer__item"><a href="#" class="footer__link">Terms</a></li> -->
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-1-of-2">
-                    <p class="footer__copyright">
-                        All rights reserved by <a href="#" class="footer__link">Team Raspberry</a> <a href="#" class="footer__link"> </a>.
-                       
-                    </p>
-                </div>
-            </div>
-        </footer>
+            $(".creditly-card-form .submit").click(function (e) {
+                e.preventDefault();
+                var output = creditly.validate();
+                if (output) {
+                    // Your validated credit card output
+                    console.log(output);
+                }
+            });
+        });
+    </script>
+    <!-- //credit-card -->
+    <div class="copy-wthree text-center">
+        <a href= "http://www.google.com">All rights reserved by 
+            Team Raspberry </a>
+        </p>
+    </div>
+</body>
+<!-- //Body -->
 
-    
-
-        <!--
-        <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-        </section>
-        -->
-   <script src="../app.js"></script>
-    </body>
 </html>

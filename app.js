@@ -9,6 +9,7 @@ const flash = require('connect-flash');
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const User = require('./models/User');
 let app = express();
 
 app.use(bodyParser.json());
@@ -24,6 +25,7 @@ mongoose
 
 app.use(ejsExpressLayouts);
 app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/payments', express.static('static'))
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -83,7 +85,6 @@ passport.deserializeUser(function(id, done) {
     });
 });
 
-
 app.get('/dashboard', ensureAuthenticated, (req, res) => {
     res.render('dashboard', {
         name: req.user.name,
@@ -99,7 +100,6 @@ app.get('/register', (req, res) => {
 });
 
 app.post('/register', (req, res) => {
-    console.log(req.body)
     const { name, email, password, password2 } = req.body;
     let errors = [];
     if (!name || !email || !password || !password2) {
@@ -124,6 +124,7 @@ app.post('/register', (req, res) => {
         });
     } else {
         User.findOne({ email: email }).then((user) => {
+            console.log(user);
             if (user) {
                 console.log(user);
                 errors.push({ msg: `Username with this Email already exists` });
@@ -151,7 +152,7 @@ app.post('/register', (req, res) => {
                                 .save()
                                 .then((user) => {
                                     req.flash('success_msg', 'You are registerd now you can login');
-                                    res.redirect('/users/login');
+                                    res.redirect('/login');
                                 })
                                 .catch((err) => console.log(`error ${err}`));
                         }
