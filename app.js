@@ -88,7 +88,8 @@ passport.deserializeUser(function(id, done) {
 });
 
 app.get('/dashboard', ensureAuthenticated, (req, res) => {
-    res.render('dashboard', {
+    console.log(req.user)
+    res.render('userdashboard', {
         name: req.user.name,
     });
 });
@@ -177,7 +178,7 @@ app.post('/register', (req, res) => {
 app.post('/login', (req, res, next) => {
     passport.authenticate('local', {
         successRedirect: '/dashboard',
-        failureRedirect: '/users/login',
+        failureRedirect: '/login',
         failureFlash: true,
     })(req, res, next);
 });
@@ -185,7 +186,7 @@ app.post('/login', (req, res, next) => {
 app.get('/logout', (req, res) => {
     req.logout();
     req.flash('success_msg', 'Successfully Logout');
-    res.redirect('/users/login');
+    res.redirect('/login');
 });
 
 function ensureAuthenticated(req, res, next) {
