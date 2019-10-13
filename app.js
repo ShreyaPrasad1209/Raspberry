@@ -12,8 +12,6 @@ const LocalStrategy = require('passport-local').Strategy;
 const User = require('./models/User');
 let app = express();
 
-let payments = '/../Users/Rahul/Desktop/Raspberry/static/index.ejs'
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -31,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'staic')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Session management
 app.use(
     session({
         secret: 'keyboard cat',
@@ -87,6 +86,8 @@ passport.deserializeUser(function(id, done) {
     });
 });
 
+
+// Routes
 app.get('/dashboard', ensureAuthenticated, (req, res) => {
     console.log(req.user)
     res.render('userdashboard', {
@@ -189,6 +190,7 @@ app.get('/logout', (req, res) => {
     res.redirect('/login');
 });
 
+//  checking if user is authenticated
 function ensureAuthenticated(req, res, next) {
     console.log('Reached to ensureAuthenticated');
     if (req.isAuthenticated) {
@@ -198,6 +200,9 @@ function ensureAuthenticated(req, res, next) {
     req.flash('error_msg', 'You need to login first');
     res.redirect('/login');
 }
+
+// Stripe API payments
+
 
 const PORT = 5000;
 
