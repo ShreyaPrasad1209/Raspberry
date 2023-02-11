@@ -24,6 +24,6 @@
     "routes": "^2.1.0",
     "stripe": "^7.10.0",
     "webpack": "^4.41.1",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.12"
   }
 }
